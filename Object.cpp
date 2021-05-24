@@ -6,6 +6,8 @@ using namespace std;
 
 #endif
 
+#include "paymentMethod.cpp"
+
 class phone{
     protected:
     string company;
@@ -213,6 +215,29 @@ class SamsungJ7 : public Samsung , public phoneSetting{
         SamsungJ7():Samsung(15000,16,"Dual SIM","Samsung","SamsungJ7","12387623"){}
         phoneSetting *setting = phoneSetting::getInstance();
 
+       
+        void orderFood()
+        {
+            string dishname,price;
+            cout<<"Enter Dish"<<endl;
+            cin>> dishname;
+            cout<<"Enter price"<<endl;
+            cin>>price;
+
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            int type;
+            cin>>type;
+            
+            paymentMethod * p_method = payment::makePayment(type);
+
+            if(type)
+            {
+                delete p_method;
+            }            
+        }
+
+
+
      
 };
 
@@ -224,7 +249,25 @@ class SamsungA5 : public Samsung , public phoneSetting{
         SamsungA5():Samsung(22000,22,"Dual SIM","Samsung","SamsungA5","12987387"){}
         phoneSetting *setting = phoneSetting::getInstance();
 
-        
+        void orderFood()
+        {
+            string dishname,price;
+            cout<<"Enter Dish"<<endl;
+            cin>> dishname;
+            cout<<"Enter price"<<endl;
+            cin>>price;
+
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            int type;
+            cin>>type;
+            
+            paymentMethod * p_method = payment::makePayment(type);
+
+            if(type)
+            {
+                delete p_method;
+            }            
+        }
 
         
 
@@ -236,6 +279,25 @@ class Iphone10 : public Apple, public phoneSetting{
         
         Iphone10():Apple(70000,48,"Single SIM","Apple","Iphone10","42387623"){}
         phoneSetting *setting = phoneSetting::getInstance();
+        void orderFood()
+        {
+            string dishname,price;
+            cout<<"Enter Dish"<<endl;
+            cin>> dishname;
+            cout<<"Enter price"<<endl;
+            cin>>price;
+
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            int type;
+            cin>>type;
+            
+            paymentMethod * p_method = payment::makePayment(type);
+
+            if(type)
+            {
+                delete p_method;
+            }            
+        }
 
 };
 
@@ -248,6 +310,26 @@ class Iphone12 : public Apple, public phoneSetting{
         Iphone12():Apple(90000,48,"Single SIM","Apple","Iphone12","45687623"){}
         phoneSetting *setting = phoneSetting::getInstance();
 
+        void orderFood()
+        {
+            string dishname,price;
+            cout<<"Enter Dish"<<endl;
+            cin>> dishname;
+            cout<<"Enter price"<<endl;
+            cin>>price;
+
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            int type;
+            cin>>type;
+            
+            paymentMethod * p_method = payment::makePayment(type);
+
+            if(type)
+            {
+                delete p_method;
+            }            
+        }
+
 };
 
 
@@ -258,6 +340,27 @@ class Redmi5 : public MI, public phoneSetting{
         Redmi5():MI(9000,16,"Dual SIM","Xiomi","Redmi5","12387563"){}
         phoneSetting *setting = phoneSetting::getInstance();
 
+
+        void orderFood()
+        {
+            string dishname,price;
+            cout<<"Enter Dish"<<endl;
+            cin>> dishname;
+            cout<<"Enter price"<<endl;
+            cin>>price;
+
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            int type;
+            cin>>type;
+            
+            paymentMethod * p_method = payment::makePayment(type);
+
+            if(type)
+            {
+                delete p_method;
+            }            
+        }
+
 };
 
 
@@ -267,6 +370,26 @@ class Redmi5pro : public MI, public phoneSetting{
         
         Redmi5pro():MI(14000,20,"Dual SIM","Xiomi","Redmi5pro","67387563"){}
         phoneSetting *setting = phoneSetting::getInstance();
+
+        void orderFood()
+        {
+            string dishname,price;
+            cout<<"Enter Dish"<<endl;
+            cin>> dishname;
+            cout<<"Enter price"<<endl;
+            cin>>price;
+
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            int type;
+            cin>>type;
+            
+            paymentMethod * p_method = payment::makePayment(type);
+
+            if(type)
+            {
+                delete p_method;
+            }            
+        }
 
 };
 
