@@ -224,7 +224,7 @@ class SamsungJ7 : public Samsung , public phoneSetting{
             cout<<"Enter price"<<endl;
             cin>>price;
 
-            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit";
+            cout<<"Select the Payment method \n 1. Pay through UPI \n 2. Pay using debit"<<endl;
             int type;
             cin>>type;
             

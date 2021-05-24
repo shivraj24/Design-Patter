@@ -19,7 +19,7 @@ int main()
 
         while(true)
         {
-            cout<<"1. Dial \n 2. Send Message \n 3. Show settings \n 4. Change settings ";
+            cout<<"1. Dial \n 2. Send Message \n 3. Show settings \n 4. Change settings \n 5.Order Food "<<endl;
             int ch;
             cin>>ch;
 
@@ -77,6 +77,11 @@ int main()
                         }
                 }
                     break;
+            case 5:
+                {
+                    phon->orderFood();
+                    break;
+                }
             
             default:
                 break;
