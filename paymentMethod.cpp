@@ -8,6 +8,14 @@ using namespace std;
 
 #include "pay.cpp"
 
+
+//Strategy Pattern 
+//Strategy pattern is used because we have multiple payment methods and client decides the actual implementation of payment method to be used at runtime.
+
+//For our example, we will try to implement a simple Food ordering system where we have two payment strategies – using UPI or using DebitCard.
+//First I created the interface for our strategy pattern in pay.cpp file.
+
+
 class payment
 {
 public:
