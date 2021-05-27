@@ -165,6 +165,8 @@ class Apple : public phone {
 
 // Singleton Patter 
 // Only Single instance of setting class is created for each Phone
+//Private static instance to restrict instantiation of the class from other classes.
+//Public static method that returns the instance of the class, this is the global access point for outer world to get the instance of the singleton class PhoneSetting.
 
 class phoneSetting{
     static phoneSetting* _instance;
