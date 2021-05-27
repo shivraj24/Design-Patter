@@ -5,6 +5,8 @@
 using namespace std;
 
 #endif
+// Interface of Strategy Pattern for PaymentMethods
+//Here we have concrete implementation of algorithms for payment using UPI card or through Debitcard.
 
 class paymentMethod
 {
@@ -14,6 +16,8 @@ public:
     virtual void paymentStatus() = 0;
 };
 
+
+//Implementaion of UPI Payment 
 class UPIPayment : public paymentMethod
 {
     string upiID;
@@ -43,7 +47,7 @@ class UPIPayment : public paymentMethod
     }
 };
 
-
+//Implementation of debitCard payment
 class debitCard : public paymentMethod{
     string cardnumber;
     string cvv;
