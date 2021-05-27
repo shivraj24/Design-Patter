@@ -161,6 +161,11 @@ class Apple : public phone {
 
 
 };
+
+
+// Singleton Patter 
+// Only Single instance of setting class is created for each Phone
+
 class phoneSetting{
     static phoneSetting* _instance;
     int brightness;
