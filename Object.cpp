@@ -189,8 +189,9 @@ public:
         }
     }
 };
-//Singleton pattern
-class phoneSetting
+// Singleton Patter 
+// Only Single instance of setting class is created for each Phone
+//Private static instance to restrict instantiation of the class from other classes. class phoneSetting
 {
     static phoneSetting *_instance;
     int brightness;
